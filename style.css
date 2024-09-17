@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Balsamiq+Sans:wght@700&family=Caveat:wght@400;500&family=Lumanosimo&family=Marck+Script&family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;1,400&family=Roboto&family=Rubik:ital,wght@0,300;0,400;0,500;1,600&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+.header {
+    position: fixed;
+    height: 45px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1F2833;
+    z-index: 1000;
+}
+
+.header .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header .flex .logo {
+    font-size: 3.5rem;
+    color: white;
+    margin-left: 2rem;
+    text-transform: none;
+}
+
+.header span {
+    color: orange;
+}
+
+.navbar {
+    margin-right: 2rem;
+}
+
+.header .flex .navbar a {
+    font-size: 2rem;
+    color:#66FCF1 ;
+    padding: 1rem;
+    text-transform: none;
+    text-decoration: none;
+
+}
+
+.header .flex .navbar a:hover {
+    color: orange;
+}
+
+#menu-btn {
+    display: none;
+    color: #45A29E;
+    margin: 1rem;
+    font-size: 2.5rem;
+
+}
+
+#menu-btn.fa-times {
+    transform: rotate(180deg);
+}
+
+/*main section starts here*/
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main p {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.main h2 {
+    font-size: 3.5rem;
+    color: orange;
+}
+
+#home,
+#services {
+
+    background-color: #455363;
+}
+
+#about,
+#contact {
+    background-color: #2b3645;
+
+}
+
+.footer{
+    background-color: #455363;
+    color: white;
+    padding: 2px 0;
+  
+}
+.footer p{
+   font-size: 10px;
+   text-align: center;
+   
+}
+
+@media(max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+        margin-right: 5rem;
+    }
+
+    .header .flex .logo {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        border-top: .1rem solid #45A29E;
+        border-bottom: .1rem solid #45A29E;
+        background-color: #1F2833;
+        display: none;
+
+    }
+
+    .header .flex .navbar.open {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .header .flex .navbar a {
+        display: block;
+        cursor: pointer;
+        font-size: 18px;
+      
+    }
+
+    .main {
+        height: 45vh;
+    }
+
+    .main p {
+        font-size: 1.2rem;
+        padding: 0 4rem;
+    }
+
+    .main h2 {
+        font-size: 2rem;
+        margin: 1rem auto;
+        padding: 0 2rem;
+    }
+}
